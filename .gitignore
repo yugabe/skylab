@@ -156,3 +156,6 @@ $RECYCLE.BIN/
 # Key files
 *.key
 *.snk
+
+# Visual Studio local settings folder
+.vs

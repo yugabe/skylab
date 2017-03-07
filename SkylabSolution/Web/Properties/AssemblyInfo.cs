@@ -7,11 +7,11 @@ using System;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle( "Skylab Web" )]
-[assembly: AssemblyDescription( "BME DreamSpark website Web module" )]
+[assembly: AssemblyDescription( "BME Microsoft Imagine website Web module" )]
 [assembly: AssemblyConfiguration( "" )]
 [assembly: AssemblyCompany( "BME" )]
-[assembly: AssemblyProduct( "BME DreamSpark website" )]
-[assembly: AssemblyCopyright( "Copyright © BME AUT 2014" )]
+[assembly: AssemblyProduct( "BME Microsoft Imagine website" )]
+[assembly: AssemblyCopyright( "Copyright © BME AUT 2017" )]
 [assembly: AssemblyTrademark( "" )]
 [assembly: AssemblyCulture( "" )]
 
