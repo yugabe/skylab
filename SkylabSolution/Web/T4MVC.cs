@@ -63,6 +63,58 @@ internal partial class T4MVC_System_Web_Mvc_ActionResult : System.Web.Mvc.Action
 namespace Links
 {
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+    public static class Static {
+        private const string URLPATH = "~/Static";
+        public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+        public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public static class css {
+            private const string URLPATH = "~/Static/css";
+            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+            public static readonly string metro_bootstrap_min_css = Url("metro-bootstrap.min.css");
+            public static readonly string msdnaa_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/msdnaa.min.css") ? Url("msdnaa.min.css") : Url("msdnaa.css");
+                 
+        }
+    
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public static class img {
+            private const string URLPATH = "~/Static/img";
+            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+            public static readonly string bme_logo_png = Url("bme-logo.png");
+            public static readonly string fork_me_on_github_png = Url("fork-me-on-github.png");
+            public static readonly string glyphicons_halflings_png = Url("glyphicons-halflings.png");
+        }
+    
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public static class js {
+            private const string URLPATH = "~/Static/js";
+            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+            public static readonly string msdnaa_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/msdnaa.min.js") ? Url("msdnaa.min.js") : Url("msdnaa.js");
+        }
+    
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public static class lib {
+            private const string URLPATH = "~/Static/lib";
+            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+            public static readonly string bootstrap_collapse_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/bootstrap-collapse.min.js") ? Url("bootstrap-collapse.min.js") : Url("bootstrap-collapse.js");
+            public static readonly string bootstrap_collapse_min_js = Url("bootstrap-collapse.min.js");
+            public static readonly string bootstrap_collapse_min_js_map = Url("bootstrap-collapse.min.js.map");
+            public static readonly string bootstrap_transition_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/bootstrap-transition.min.js") ? Url("bootstrap-transition.min.js") : Url("bootstrap-transition.js");
+            public static readonly string bootstrap_transition_min_js = Url("bootstrap-transition.min.js");
+            public static readonly string bootstrap_transition_min_js_map = Url("bootstrap-transition.min.js.map");
+            public static readonly string jquery_1_8_3_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery-1.8.3.min.js") ? Url("jquery-1.8.3.min.js") : Url("jquery-1.8.3.js");
+            public static readonly string jquery_1_8_3_vsdoc_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery-1.8.3-vsdoc.min.js") ? Url("jquery-1.8.3-vsdoc.min.js") : Url("jquery-1.8.3-vsdoc.js");
+            public static readonly string jquery_1_8_3_min_js = Url("jquery-1.8.3.min.js");
+        }
+    
+        public static readonly string web_config = Url("web.config");
+    }
+
+    [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
     public static partial class Bundles
     {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
