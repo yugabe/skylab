@@ -27,24 +27,21 @@ namespace Skylab.Web
 			// This ensures that the order of the handler mappings in the root web.config file does not affect the handling of the Shibboleth.sso path.
 			routes.IgnoreRoute( "{resource}.sso/{*pathInfo}" );
 
-            routes.RouteExistingFiles = true;
+            routes.RouteExistingFiles = false;
 
             // For compatibility reasons, manually map all routes to the previously used URLs.
             routes.MapRoute( RouteNames.Index, "index.html", MVC.Home.Index() );
 			routes.MapRoute( RouteNames.Faq, "hu/gyik.htm", MVC.Home.Faq() );
 			routes.MapRoute( RouteNames.Contact, "hu/kapcsolatfelvetel.htm", MVC.Home.Contact() );
 			routes.MapRoute( RouteNames.Download, "hu/letoltes.htm", MVC.Home.Download() );
-            routes.MapRoute(RouteNames.DownloadStudent, "hu/letoltes.htm/teacher", MVC.Home.Download());
-            routes.MapRoute(RouteNames.DownloadTeacher, "hu/letoltes.htm/student", MVC.Home.Download());
+            routes.MapRoute( RouteNames.DownloadStudent, "hu/letoltes.htm/teacher", MVC.Home.Download());
+            routes.MapRoute( RouteNames.DownloadTeacher, "hu/letoltes.htm/student", MVC.Home.Download());
             routes.MapRoute( RouteNames.DownloadErrors, "hu/letoltes_hibakodok.htm", MVC.Home.DownloadErrors() );
 			routes.MapRoute( RouteNames.Licence, "hu/licenc_feltetelek.htm", MVC.Home.Licence() );
 			routes.MapRoute( RouteNames.Program, "hu/msdnaa_program.htm", MVC.Home.Program() );
 			routes.MapRoute( RouteNames.DownloadGuide, "hu/utmutato_letolteshez.htm", MVC.Home.DownloadGuide() );
 			routes.MapRoute( RouteNames.RegistrationGuide, "hu/utmutato_regisztraciohoz.htm", MVC.Home.RegistrationGuide() );
 			routes.MapRoute( RouteNames.AdminGuide, "hu/utmutato_rendszergazdaknak.htm", MVC.Home.AdminGuide() );
-			routes.MapRoute( RouteNames.Login, "hu/bejelentkezes.htm", MVC.Login.LoginUser() );
-			routes.MapRoute( RouteNames.Logout, "hu/kijelentkezes.htm", MVC.Login.LogoutUser() );
-			routes.MapRoute( RouteNames.LoginRedirect, "secure/redirect", MVC.Secure.LoginRedirect() );
 
 			// The default route is used to map the "/" URL.
 			routes.MapRoute(

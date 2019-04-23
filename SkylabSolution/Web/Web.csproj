@@ -105,21 +105,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\RouteNames.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LoginController.cs" />
-    <Compile Include="Controllers\SecureController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="HomeController.generated.cs">
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
-    <Compile Include="LoginController.generated.cs">
-      <DependentUpon>T4MVC.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SecureController.generated.cs">
-      <DependentUpon>T4MVC.tt</DependentUpon>
-    </Compile>
     <Compile Include="SharedController.generated.cs">
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
@@ -138,9 +130,6 @@
     <Content Include="robots.txt" />
     <Content Include="Static\css\metro-bootstrap.min.css" />
     <Content Include="Static\css\msdnaa.css" />
-    <Content Include="Static\css\msdnaa.min.css">
-      <DependentUpon>msdnaa.css</DependentUpon>
-    </Content>
     <Content Include="Static\img\bme-logo.png" />
     <Content Include="Static\img\fork-me-on-github.png" />
     <Content Include="Static\img\glyphicons-halflings.png" />
@@ -155,6 +144,9 @@
     <None Include="..\Skylab.snk">
       <Link>Skylab.snk</Link>
     </None>
+    <None Include="Properties\PublishProfiles\autegyetemiszoftverek - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\autegyetemiszoftverek - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Static\lib\jquery-1.8.3-vsdoc.js">
       <DependentUpon>jquery-1.8.3.js</DependentUpon>
     </None>
@@ -163,12 +155,6 @@
       <DependentUpon>jquery-1.8.3.js</DependentUpon>
     </Content>
     <Content Include="Static\js\msdnaa.js" />
-    <Content Include="Static\js\msdnaa.min.js">
-      <DependentUpon>msdnaa.js</DependentUpon>
-    </Content>
-    <Content Include="Static\js\msdnaa.min.js.map">
-      <DependentUpon>msdnaa.min.js</DependentUpon>
-    </Content>
     <Content Include="Static\lib\bootstrap-collapse.min.js.map">
       <DependentUpon>bootstrap-collapse.min.js</DependentUpon>
     </Content>
@@ -195,9 +181,6 @@
     <Content Include="Views\Home\DownloadGuide.cshtml" />
     <Content Include="Views\Home\RegistrationGuide.cshtml" />
     <Content Include="Views\Home\AdminGuide.cshtml" />
-    <Content Include="Views\Login\LoginUser.cshtml" />
-    <Content Include="Views\Login\LogoutUser.cshtml" />
-    <Content Include="Views\Secure\LoginRedirect.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="T4MVC.tt.hooks.t4" />
