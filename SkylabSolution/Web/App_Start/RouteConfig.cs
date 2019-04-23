@@ -42,9 +42,6 @@ namespace Skylab.Web
 			routes.MapRoute( RouteNames.DownloadGuide, "hu/utmutato_letolteshez.htm", MVC.Home.DownloadGuide() );
 			routes.MapRoute( RouteNames.RegistrationGuide, "hu/utmutato_regisztraciohoz.htm", MVC.Home.RegistrationGuide() );
 			routes.MapRoute( RouteNames.AdminGuide, "hu/utmutato_rendszergazdaknak.htm", MVC.Home.AdminGuide() );
-			routes.MapRoute( RouteNames.Login, "hu/bejelentkezes.htm", MVC.Login.LoginUser() );
-			routes.MapRoute( RouteNames.Logout, "hu/kijelentkezes.htm", MVC.Login.LogoutUser() );
-			routes.MapRoute( RouteNames.LoginRedirect, "secure/redirect", MVC.Secure.LoginRedirect() );
 
 			// The default route is used to map the "/" URL.
 			routes.MapRoute(
