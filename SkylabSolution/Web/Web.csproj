@@ -21,6 +21,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -162,12 +163,9 @@
       <DependentUpon>jquery-1.8.3.js</DependentUpon>
     </Content>
     <Content Include="Static\js\msdnaa.js" />
-    <None Include="Properties\PublishProfiles\Preview.pubxml" />
-    <None Include="Properties\PublishProfiles\Production.pubxml" />
     <Content Include="Static\js\msdnaa.min.js">
       <DependentUpon>msdnaa.js</DependentUpon>
     </Content>
-    <Content Include="Static\web.config" />
     <Content Include="Static\js\msdnaa.min.js.map">
       <DependentUpon>msdnaa.min.js</DependentUpon>
     </Content>
@@ -177,6 +175,7 @@
     <Content Include="Static\lib\bootstrap-transition.min.js.map">
       <DependentUpon>bootstrap-transition.min.js</DependentUpon>
     </Content>
+    <Content Include="Static\web.config" />
     <None Include="T4MVC.tt.settings.xml" />
     <Content Include="Web.config" />
     <Content Include="Web.Release.config">
@@ -221,7 +220,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\Skylab.snk</AssemblyOriginatorKeyFile>
@@ -240,7 +239,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>19059</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:6666/</IISUrl>
+          <IISUrl>http://localhost:4501/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

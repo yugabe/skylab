@@ -24,14 +24,16 @@ namespace Skylab.Web
 		public const string Contact = "Contact";
 
 		/// <summary>
-		/// The route name for the Download (Letöltés) page.
+		/// The route names for the Download (Letöltés) pages (student, teacher).
 		/// </summary>
 		public const string Download = "Download";
+        public const string DownloadStudent = "Download/student";
+        public const string DownloadTeacher = "Download/teacher";
 
-		/// <summary>
-		/// The route name for the Download Error Codes (Letöltési hibakódok) page.
-		/// </summary>
-		public const string DownloadErrors = "DownloadErrors";
+        /// <summary>
+        /// The route name for the Download Error Codes (Letöltési hibakódok) page.
+        /// </summary>
+        public const string DownloadErrors = "DownloadErrors";
 
 		/// <summary>
 		/// The route name for the DreamSpark Licence (Licenc feltételek) page.

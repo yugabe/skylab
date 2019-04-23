@@ -49,12 +49,11 @@ namespace Skylab.Web.Controllers
 			return this.View();
 		}
 
-
-		/// <summary>
-		/// Renders the Download Error Codes (Letöltési hibakódok magyarázata) page.
-		/// </summary>
-		/// <returns>The HTML markup of the page.</returns>
-		public virtual ActionResult DownloadErrors()
+        /// <summary>
+        /// Renders the Download Error Codes (Letöltési hibakódok magyarázata) page.
+        /// </summary>
+        /// <returns>The HTML markup of the page.</returns>
+        public virtual ActionResult DownloadErrors()
 		{
 			return this.View();
 		}

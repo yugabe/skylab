@@ -85,4 +85,12 @@ $(document).ready(function () {
     if (window.location.href.indexOf('kapcsolatfelvetel.htm') > 0)
         $('#mnuKapcsolat').addClass('active');
 
+
+    //Student/Teacher column hide for the chossen option in download page
+    if (window.location.href.indexOf('letoltes.htm') > 0 && window.location.href.substr(window.location.href.lastIndexOf('/') + 1) === 'teacher') {
+        $('td:nth-child(4),th:nth-child(4)').hide();
+    }
+    else if (window.location.href.indexOf('letoltes.htm') > 0 && window.location.href.substr(window.location.href.lastIndexOf('/') + 1) === 'student') {
+        $('td:nth-child(2),th:nth-child(2)').hide();
+    }
 });
